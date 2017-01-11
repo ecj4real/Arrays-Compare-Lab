@@ -1,0 +1,36 @@
+module.exports = {
+	findMissing: function(arg1, arg2)
+	{
+		var output = [];	//variable to store output
+
+		for(var i = 0; i < arg1.length; i++) // look through the arg1
+		{
+			//check if elements of arg1 is not in arg2 and not in the output already
+			if(!isInArray(arg1[i], arg2) && !isInArray(arg1[i], output)) 
+			{
+				output.push(arg1[i]);
+			}
+		}
+		for(var i = 0; i < arg2.length; i++) // look through the arg1
+		{
+			//check if elements of arg2 is not in arg1 and not in the output already
+			if(!isInArray(arg2[i], arg1) && !isInArray(arg2[i], output))
+			{
+				output.push(arg2[i]);
+			}
+		}
+
+		if(output.length == 1) //checks if output is equal t0 1
+			return output[0];	// returns the one extra number
+		else if(output.length > 0) // checks if output is more than one
+			return output;		// returns the extra numbers as an array
+		else
+			return 0;		// returns 0 if both arguments are same
+
+		
+	}
+}
+//checks if an element is in an array
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+}
