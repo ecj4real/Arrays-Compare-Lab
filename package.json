@@ -1,0 +1,25 @@
+{
+  "name": "arrays-compare-lab",
+  "version": "1.0.0",
+  "description": "arrays-compare-lab",
+  "main": "app/missing.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecj4real/Arrays-Compare-Lab.git"
+  },
+  "author": "Emegbue Chukwudi John",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecj4real/Arrays-Compare-Lab.git/issues"
+  },
+  "homepage": "https://github.com/ecj4real/Arrays-Compare-Lab.git#readme",
+  "dependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
